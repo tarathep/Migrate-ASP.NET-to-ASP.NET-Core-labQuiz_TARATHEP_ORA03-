@@ -1,0 +1,110 @@
+﻿@model labQuiz_TARATHEP_ORA03_NETCore.Models.Employees
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Employee List</h2>
+
+<p>
+
+
+
+    @Html.ActionLink("Create", "Create")
+</p>
+<table id="myTable" class="">
+
+    <thead>
+        <tr>
+            @*<th>
+
+                    @Html.DisplayNameFor(model => model.emp_no)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.titleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.firstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salary)
+            </th>
+            <th></th>
+        </tr>
+
+    </thead>
+    @*@foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.title_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.first_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.last_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.department)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.salary)
+                </td>
+                <td></td>
+            </tr>
+        }*@
+    @*@Html.ActionLink("Edit", "Edit", new { id = item.emp_no }) |
+        @Html.ActionLink("Details", "Details", new { id = item.emp_no }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.emp_no })*@
+</table>
+
+
+
+@section scripts{
+    <script>
+    $("#myTable").DataTable({
+        language: {
+            loadingRecords:"<img src='/css/sprinner/loading.gif'>"
+        },
+        ajax:{
+            url:'@Url.Action("employeeJson", "Employee")',
+            dataSrc:""
+        },
+        columns: [
+
+            { data: "titleName" },
+            { data: "firstName" },
+            { data: "lastName" },
+            { data: "gender" },
+            { data: "department" },
+            { data: "salary" },
+            {
+                data: "empNo",
+                render: function (data) {
+                    
+                    return '@Html.ActionLink("Edit", "Edit", new {  id = "data" })'.replace("data", data) + '|' +
+                        '@Html.ActionLink("Details", "Details", new { id = "data" })'.replace("data", data) + '|' +
+                        '@Html.ActionLink("Delete", "Delete", new { id = "data" })'.replace("data", data);
+                }
+
+            }
+        ]
+        });
+    </script>
+
+}

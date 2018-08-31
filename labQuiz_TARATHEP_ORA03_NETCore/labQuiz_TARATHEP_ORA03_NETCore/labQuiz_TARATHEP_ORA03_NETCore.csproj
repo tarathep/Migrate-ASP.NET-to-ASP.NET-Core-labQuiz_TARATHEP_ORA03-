@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\DataTables\css\common.scss" />
+    <None Include="wwwroot\css\DataTables\css\mixins.scss" />
+    <None Include="wwwroot\css\DataTables\css\semanticui.scss" />
+    <None Include="wwwroot\css\DataTables\swf\flashExport.swf" />
+    <None Include="wwwroot\lib\DataTables\autoFill.bootstrap.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.bootstrap.min.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.bootstrap4.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.bootstrap4.min.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.foundation.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.foundation.min.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.jqueryui.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.jqueryui.min.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.semanticui.js" />
+    <None Include="wwwroot\lib\DataTables\autoFill.semanticui.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.bootstrap.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.bootstrap.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.bootstrap4.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.bootstrap4.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.colVis.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.colVis.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.flash.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.flash.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.foundation.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.foundation.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.html5.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.html5.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.jqueryui.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.jqueryui.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.print.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.print.min.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.semanticui.js" />
+    <None Include="wwwroot\lib\DataTables\buttons.semanticui.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.autoFill.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.autoFill.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.bootstrap.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.bootstrap4.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.buttons.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.buttons.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.colReorder.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.colReorder.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.fixedColumns.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.fixedColumns.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.fixedHeader.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.fixedHeader.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.foundation.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.foundation.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.jqueryui.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.jqueryui.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.keyTable.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.keyTable.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.material.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.material.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.responsive.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.responsive.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.rowGroup.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.rowGroup.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.rowReorder.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.rowReorder.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.scroller.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.scroller.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.select.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.select.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.semanticui.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.semanticui.min.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.uikit.js" />
+    <None Include="wwwroot\lib\DataTables\dataTables.uikit.min.js" />
+    <None Include="wwwroot\lib\DataTables\jquery.dataTables.js" />
+    <None Include="wwwroot\lib\DataTables\jquery.dataTables.min.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.bootstrap.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.bootstrap.min.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.bootstrap4.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.bootstrap4.min.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.foundation.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.foundation.min.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.jqueryui.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.jqueryui.min.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.semanticui.js" />
+    <None Include="wwwroot\lib\DataTables\responsive.semanticui.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>
