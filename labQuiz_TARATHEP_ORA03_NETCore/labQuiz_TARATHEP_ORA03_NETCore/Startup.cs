@@ -27,9 +27,9 @@ namespace labQuiz_TARATHEP_ORA03_NETCore
         public void ConfigureServices(IServiceCollection services)
         {
 
-            var connection = @"Server=Bokie-Surface;Database=Employee;
-              User ID=sa;Password=password;Trusted_Connection=True;
-                ConnectRetryCount=0";
+            //var connection = @"Server=Bokie-Surface;Database=Employee;User ID=sa;Password=password;Trusted_Connection=True;ConnectRetryCount=0";
+
+            var connection = Microsoft.Extensions.Configuration.ConfigurationExtensions.GetConnectionString(this.Configuration, "DefaultConnection");
             services.AddDbContext<EmployeeContext>(options => options.UseSqlServer(connection));
 
             services.Configure<CookiePolicyOptions>(options =>
